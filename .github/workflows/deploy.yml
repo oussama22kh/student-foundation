@@ -32,16 +32,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-```
-
-After committing and pushing this file to your repository:
-
-1. Go to your repository **Settings** → **Pages**
-2. Under **Build and deployment** → **Source**, select **GitHub Actions**
-3. The site will be deployed at `https://<username>.github.io/student-foundation/`
-
-The workflow:
-- Triggers on pushes to the `main` branch
-- Checks out code, sets up Node.js, and installs dependencies
-- Builds the project (output goes to `dist/`)
-- Deploys the `dist/` folder to the `gh-pages` branch automatically
