@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import ThesisCard from '../components/ThesisCard'
 
 const sampleTheses = [
@@ -42,15 +43,15 @@ const LatestTheses = () => {
             </h2>
           </div>
           
-          <a 
-            href="/archive" 
+          <Link 
+            to="/archive" 
             className="inline-flex items-center text-algeria-blue font-medium hover:text-algeria-gold transition-colors duration-200"
           >
             عرض جميع الأطروحات
             <svg className="w-5 h-5 ms-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
