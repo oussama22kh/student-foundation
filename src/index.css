@@ -4,16 +4,20 @@
 
 * {
   font-family: 'Noto Kufi Arabic', system-ui, sans-serif;
+  box-sizing: border-box;
 }
 
 html {
   font-family: 'Noto Kufi Arabic', system-ui, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: 'Noto Kufi Arabic', system-ui, sans-serif;
   background-color: #E8E2DB;
   color: #1A1A1A;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 @layer components {

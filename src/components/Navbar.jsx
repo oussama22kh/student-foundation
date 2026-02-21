@@ -70,14 +70,14 @@ const Navbar = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
-            <div className="flex flex-col gap-4">
+          <div className="md:hidden py-4 border-t border-gray-100 absolute w-full left-0 bg-white shadow-lg">
+            <div className="flex flex-col gap-1 px-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`text-sm font-medium py-2 ${
-                    isActive(link.path) ? 'text-algeria-blue' : 'text-gray-600'
+                  className={`text-base font-medium py-3 px-4 rounded-lg ${
+                    isActive(link.path) ? 'text-algeria-blue bg-algeria-blue/5' : 'text-gray-600 hover:bg-algeria-cream'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -86,7 +86,7 @@ const Navbar = () => {
               ))}
               <Link
                 to="/admin"
-                className="inline-block px-5 py-2 bg-algeria-gold text-algeria-dark text-sm font-medium text-center"
+                className="mt-2 px-5 py-3 bg-algeria-gold text-algeria-dark text-base font-medium text-center rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 تسجيل الدخول
