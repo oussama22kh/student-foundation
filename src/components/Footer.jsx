@@ -4,9 +4,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-algeria-blue text-white pt-16 pb-8">
+    <footer className="bg-algeria-blue text-white pt-16 pb-8 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-white/10 flex items-center justify-center">
@@ -74,15 +74,15 @@ const Footer = () => {
               ))}
             </div>
 
-            <div className="mt-8">
+            <div className="mt-6 md:mt-8">
               <h5 className="text-sm font-medium text-white/60 mb-3">النشرة البريدية</h5>
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <input 
                   type="email" 
                   placeholder="بريدك الإلكتروني" 
-                  className="flex-1 px-4 py-2 bg-white/10 border border-white/20 text-sm text-white placeholder-white/50 focus:outline-none focus:border-algeria-gold"
+                  className="flex-1 px-4 py-2 bg-white/10 border border-white/20 text-sm text-white placeholder-white/50 focus:outline-none focus:border-algeria-gold rounded-lg"
                 />
-                <button className="px-4 py-2 bg-algeria-gold text-algeria-dark text-sm font-medium hover:bg-yellow-400 transition-colors">
+                <button className="px-4 py-2 bg-algeria-gold text-algeria-dark text-sm font-medium hover:bg-yellow-400 transition-colors rounded-lg whitespace-nowrap">
                   اشتراك
                 </button>
               </div>
